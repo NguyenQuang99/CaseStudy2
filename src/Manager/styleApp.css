@@ -1,0 +1,23 @@
+#appmanager {
+    -fx-background-image: url("image/sach2.jpg");
+}
+.button{
+    -fx-background-color: sandybrown;
+    -fx-scale-y: 1.1;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+
+}
+.button:hover{
+    -fx-scale-y: 1.1;
+    -fx-background-radius: 20;
+    -fx-background-color : #A1C1F4 ;
+    -fx-text-fill: blue;
+}
+
+.button:pressed
+{
+    -fx-text-fill: red;
+    -fx-rotate: 20;
+    -fx-background-color : darkslateblue ;
+}

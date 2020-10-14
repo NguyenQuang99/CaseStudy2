@@ -1,0 +1,19 @@
+.button{
+    -fx-background-color : #A1C1F4 ;
+    -fx-scale-y: 1.1;
+    -fx-background-radius: 10;
+    -fx-text-fill: blue;
+}
+.button:hover{
+    -fx-scale-y: 1.1;
+    -fx-background-radius: 20;
+    -fx-background-color: sandybrown;
+    -fx-text-fill: firebrick;
+}
+
+.button:pressed
+{
+    -fx-text-fill: white;
+    -fx-rotate: 20;
+    -fx-background-color : #73A3EF ;
+}

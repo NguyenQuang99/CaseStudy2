@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#TableSelectionChanged" prefHeight="877.0" prefWidth="1309.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookmanage.bookManagerController">
+    <children>
+        <TableView fx:id="tableView" layoutX="15.0" layoutY="326.0" onMouseClicked="#TableSelectionChanged" prefHeight="538.0" prefWidth="1277.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="104.0" text="Mã Sách" />
+                <TableColumn fx:id="bookNameColumn" prefWidth="287.0" text="Tên Sách" />
+                <TableColumn fx:id="authorColumn" prefWidth="246.0" text="Tác Giả" />
+                <TableColumn fx:id="categoryColumn" prefWidth="195.0" text="Thể Loại" />
+                <TableColumn fx:id="manufacColumn" prefWidth="329.0" text="Nhà XB" />
+                <TableColumn fx:id="yearColumn" prefWidth="115.0" text="Năm Xuất Bản" />
+            </columns>
+        </TableView>
+        <Label layoutX="494.0" layoutY="14.0" prefHeight="57.0" prefWidth="337.0" text="Books Manager" textFill="#2093cd">
+            <font>
+                <Font name="Palatino Linotype Bold" size="45.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCodeBook" layoutX="153.0" layoutY="137.0" />
+        <TextField fx:id="txtYear" layoutX="562.0" layoutY="249.0" />
+        <TextField fx:id="txtAuthor" layoutX="153.0" layoutY="192.0" />
+        <TextField fx:id="txtManufac" layoutX="153.0" layoutY="249.0" />
+        <TextField fx:id="txtName" layoutX="562.0" layoutY="137.0" />
+        <TextField fx:id="txtCategory" layoutX="562.0" layoutY="192.0" />
+        <TextField fx:id="txtSearch" layoutX="1064.0" layoutY="289.0" prefHeight="31.0" prefWidth="228.0" />
+        <ComboBox fx:id="comboboxSearch" layoutX="1064.0" layoutY="242.0" prefHeight="31.0" prefWidth="228.0" />
+        <Label layoutX="15.0" layoutY="138.0" text="Mã Sách" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="197.0" text="Tác Giả" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="253.0" text="Nhà xuất Bản" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="402.0" layoutY="138.0" text="Tên Sách" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="402.0" layoutY="196.0" text="Thể Loại" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="402.0" layoutY="253.0" text="Năm Xuất Bản" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAdd" layoutX="846.0" layoutY="113.0" mnemonicParsing="false" onAction="#add" prefHeight="37.0" prefWidth="89.0" text="Add" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEdit" layoutX="846.0" layoutY="167.0" mnemonicParsing="false" onAction="#edit" prefHeight="37.0" prefWidth="89.0" text="Edit" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDel" layoutX="846.0" layoutY="266.0" mnemonicParsing="false" onAction="#delete" prefHeight="37.0" prefWidth="89.0" text="Delete" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Label layoutX="1131.0" layoutY="185.0" text="Search" textFill="#2093cd">
+            <font>
+                <Font name="Times New Roman" size="32.0" />
+            </font>
+        </Label>
+      <Box layoutX="189.0" layoutY="43.0" />
+      <Button fx:id="btnSave" disable="true" layoutX="846.0" layoutY="219.0" mnemonicParsing="false" onAction="#save" prefHeight="37.0" prefWidth="89.0" text="Save" textFill="#2093cd">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTimkiem" layoutX="983.0" layoutY="289.0" mnemonicParsing="false" onAction="#Search" prefHeight="23.0" prefWidth="75.0" text="Search">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font></Button>
+      <Separator layoutY="79.0" prefHeight="2.0" prefWidth="1309.0" />
+
+    </children>
+</AnchorPane>

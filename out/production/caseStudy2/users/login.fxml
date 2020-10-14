@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="570.0" prefHeight="362.0" prefWidth="570.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="users.loginController">
+   <children>
+      <Label layoutX="161.0" layoutY="98.0" text="UserName">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="175.0" prefHeight="28.0" prefWidth="146.0" text="Password ">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="161.0" layoutY="135.0" prefHeight="31.0" prefWidth="343.0" promptText="UserName" />
+      <Label layoutX="107.0" prefHeight="85.0" prefWidth="203.0" styleClass="color-text" stylesheets="@style.css" text="Login">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="362.0" prefWidth="106.0" styleClass="t">
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+      <PasswordField fx:id="txtPassWord" layoutX="161.0" layoutY="211.0" prefHeight="31.0" prefWidth="343.0" promptText="PassWord" />
+      <Button layoutX="275.0" layoutY="278.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="94.0" styleClass="color-text" stylesheets="@style2.css" text="Login" textFill="#0b9ae8">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font></Button>
+   </children>
+</Pane>

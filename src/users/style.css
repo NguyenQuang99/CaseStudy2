@@ -1,0 +1,9 @@
+.t {
+    -fx-background-color: cornflowerblue;
+}
+.color-text{
+    -fx-text-fill:cornflowerblue;
+}
+.background{
+    -fx-background-color: cornflowerblue;
+}

@@ -12,7 +12,10 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -302,6 +305,8 @@ public class bookManagerController implements Initializable {
             writeFile();
             clear();
 
+            save();
+
         }
     }
 
@@ -312,6 +317,22 @@ public class bookManagerController implements Initializable {
         txtManufac.clear();
         txtYear.clear();
         txtCategory.clear();
+    }
+
+    public void save() throws Exception {
+        try {
+            FileOutputStream fos = new FileOutputStream("src/bookmanage/books.txt");
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            for (Books books : listBooks ) {
+                oos.writeObject(books);
+            }
+//            oos.writeObject(productList);
+            oos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
